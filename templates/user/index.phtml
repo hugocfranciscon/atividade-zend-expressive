@@ -1,0 +1,17 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Email</th>
+      <th>Senha</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php foreach ($this->content as $beer): ?>
+      <tr>
+        <th scope="row"><?php echo $beer['id'];?></th>
+        <td><?php echo $beer['email'];?></td>
+        <td><?php echo $beer['senha'];?></td>
+    <?php endforeach; ?>
+  </tbody>
+</table>
